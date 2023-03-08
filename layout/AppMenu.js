@@ -13,6 +13,21 @@ const AppMenu = () => {
             label: 'Баннеры',
             items: [{ label: 'Главная', icon: 'pi pi-fw pi-home', to: '/admin/banners/main' }]
         },
+        /* {
+            label: 'Панель управления',
+            items: [
+                {
+                    label: 'Баннеры',
+                    icon: 'pi pi-fw pi-home',
+                    items: [
+                        { label: 'Карусель', to: '/admin/banners/main' },
+                        { label: 'Верхний баннер', to: '/admin/banners/upper' },
+                        { label: 'Нижний баннер', to: '/admin/banners/lower' }
+                    ]
+                }
+            ]
+
+        }, */
     ]
 
     return (

@@ -1,9 +1,12 @@
-import AppConfig from '@/layout/AppConfig'
 import Head from 'next/head'
 import Link from 'next/link'
 import { Button } from 'primereact/button'
+import { useEffect, useState } from 'react'
+
+import { HydrationProvider, Client } from 'react-hydration-provider'
 
 const Home = () => {
+
   return (
     <>
       <Head>
@@ -13,8 +16,12 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="surface-0 flex justify-content-center">
-        <Link href='/admin/banners/main'>
-          <Button label="Login" className="p-button-text p-button-rounded border-none font-light line-height-2 text-blue-500"></Button>
+        <Link href='/auth/login'>
+          <HydrationProvider>
+            <Client>
+              <Button label="Login" className="p-button-text p-button-rounded border-none font-light line-height-2 text-blue-500"></Button>
+            </Client>
+          </HydrationProvider>
         </Link>
       </div>
     </>
@@ -25,7 +32,6 @@ Home.getLayout = function getLayout(page) {
   return (
     <>
       {page}
-      <AppConfig simple />
     </>
   )
 }

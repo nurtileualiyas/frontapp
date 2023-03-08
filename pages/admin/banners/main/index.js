@@ -5,7 +5,7 @@ import { DataTable } from 'primereact/datatable'
 import { Dialog } from 'primereact/dialog'
 import { FileUpload } from 'primereact/fileupload'
 import { InputText } from 'primereact/inputtext'
-import { Image } from 'primereact/image';
+import { Image } from 'primereact/image'
 import { Toast } from 'primereact/toast'
 import { Toolbar } from 'primereact/toolbar'
 import { classNames } from 'primereact/utils'
@@ -256,7 +256,7 @@ const Crud = () => {
         return (
             <>
                 <span className="p-column-title">Изображение</span>
-                <Image src={baseUrl + rowData.path} alt="Image" width="100" preview />
+                <Image src={baseUrl + rowData.path} alt="Image" width="180" preview />
             </>
         )
     }
@@ -381,7 +381,7 @@ const Crud = () => {
                         <Column field="deactivate_at" sortable header="Дата деактивации" body={deactivateAtBodyTemplate} headerStyle={{ minWidth: '15rem' }}></Column>
                         <Column field="created_at" sortable header="Создан" body={createdAtBodyTemplate} headerStyle={{ minWidth: '15rem' }}></Column>
                         <Column field="updated_at" sortable header="Изменен" body={updatedAtBodyTemplate} headerStyle={{ minWidth: '15rem' }}></Column>
-                        <Column body={actionBodyTemplate} headerStyle={{ minWidth: '10rem' }}></Column>
+                        <Column body={actionBodyTemplate} headerStyle={{ minWidth: '13rem' }}></Column>
                     </DataTable>
 
                     <Dialog visible={itemDialog} style={{ width: '450px' }} header="Создание" modal className="p-fluid" footer={itemDialogFooter} onHide={hideDialog} dismissableMask={true}>
