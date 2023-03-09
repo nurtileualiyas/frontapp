@@ -1,3 +1,4 @@
+import Carousel from '@/components/Carousel'
 import Head from 'next/head'
 import Link from 'next/link'
 import { Button } from 'primereact/button'
@@ -19,11 +20,14 @@ const Home = () => {
         <Link href='/auth/login'>
           <HydrationProvider>
             <Client>
-              <Button label="Login" className="p-button-text p-button-rounded border-none font-light line-height-2 text-blue-500"></Button>
+              <Button label="Вход" className="p-button-text p-button-rounded border-none font-light line-height-2 text-blue-500"></Button>
             </Client>
           </HydrationProvider>
         </Link>
       </div>
+
+      <Carousel />
+
     </>
   )
 }
