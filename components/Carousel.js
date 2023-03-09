@@ -17,7 +17,6 @@ const Carousel = () => {
         const getItems = async () => {
             const response = await fetch(apiBaseUrl + '/banners', { headers: { 'Cache-Control': 'no-cache' } })
             const data = await response.json()
-            console.log(data);
             setItems(data)
             setItemsSize(data.length)
         }
@@ -76,18 +75,18 @@ const Carousel = () => {
                 <div className={classNames.carouselItems + ' ' + slideTransitioner} style={{ transform: `translateX(-${slidePosition}vw)` }} onTransitionEnd={() => resetSlidePositions()} >
                     {
                         <>
-                            <div className={classNames.carouselItem}>
+                            <div key={items[itemsSize - 2].id} className={classNames.carouselItem}>
                                 <img className={classNames.carouselItemImg} src={baseUrl + items[itemsSize - 2].path} alt="" />
                             </div>
                             <div className={classNames.carouselItem}>
-                                <img className={classNames.carouselItemImg} src={baseUrl + items[itemsSize - 1].path} alt="" />
+                                <img key={items[itemsSize - 1].id} className={classNames.carouselItemImg} src={baseUrl + items[itemsSize - 1].path} alt="" />
                             </div>
                         </>
                     }
 
                     {
                         items.map(item => (
-                            <div className={classNames.carouselItem}>
+                            <div key={item.id} className={classNames.carouselItem}>
                                 <img className={classNames.carouselItemImg} src={baseUrl + item.path} alt="" />
                             </div>
                         ))
@@ -96,11 +95,11 @@ const Carousel = () => {
 
                     {
                         <>
-                            <div className={classNames.carouselItem}>
+                            <div key={items[0].id} className={classNames.carouselItem}>
                                 <img className={classNames.carouselItemImg} src={baseUrl + items[0].path} alt="" />
                             </div>
                             <div className={classNames.carouselItem}>
-                                <img className={classNames.carouselItemImg} src={baseUrl + items[1].path} alt="" />
+                                <img key={items[1].id} className={classNames.carouselItemImg} src={baseUrl + items[1].path} alt="" />
                             </div>
                         </>
                     }
