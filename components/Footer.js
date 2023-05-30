@@ -63,25 +63,25 @@ const Footer = () => {
                             <hr className={classNames({ ['hr']: true, [styles.mobile_hr]: true })} />
 
                             <div className={styles.socials_hold}>
-                                <Link href={'/'}>
+                                <Link href="https://www.instagram.com/alma__tv/" target="_blank">
                                     <Image src={'/icons/socials/insta.svg'} width={20} height={20} alt="instagram svg icon" />
                                 </Link>
-                                <Link href={'/'}>
+                                <Link href="https://www.youtube.com/@AlmaTVchannel" target="_blank">
                                     <Image src={'/icons/socials/youtube.svg'} width={20} height={20} alt="youtube svg icon" />
                                 </Link>
-                                <Link href={'/'}>
+                                <Link href="https://t.me/almatvhelpbot" target="_blank">
                                     <Image src={'/icons/socials/telegram.svg'} width={20} height={20} alt="telegram svg icon" />
                                 </Link>
                                 <Link href={'/'}>
                                     <Image src={'/icons/socials/whatsapp.svg'} width={20} height={20} alt="whatsapp svg icon" />
                                 </Link>
-                                <Link href={'/'}>
+                                <Link href="https://vk.com/alma__tv" target="_blank">
                                     <Image src={'/icons/socials/vk.svg'} width={20} height={20} alt="vkontakte svg icon" />
                                 </Link>
-                                <Link href={'/'}>
+                                <Link href="https://kz.linkedin.com/company/alma-tv" target="_blank">
                                     <Image src={'/icons/socials/linkedin.svg'} width={20} height={20} alt="linkedin svg icon" />
                                 </Link>
-                                <Link href={'/'}>
+                                <Link href="https://twitter.com/_ALMA_TV_" target="_blank">
                                     <Image src={'/icons/socials/twitter.svg'} width={20} height={20} alt="twitter svg icon" />
                                 </Link>
                             </div>
