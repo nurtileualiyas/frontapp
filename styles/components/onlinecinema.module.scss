@@ -1,0 +1,109 @@
+@import '@/styles/global_variables.scss';
+
+.online_cinema {
+    padding-top: 25px;
+
+    section {
+        padding: 50px 0;
+        background-color: $primary_dark_blue;
+    }
+
+    h3 {
+        margin: 0;
+        color: #fff;
+    }
+
+    .title_hold {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 300px;
+        margin-bottom: 15px;
+    }
+
+    .section_description {
+        color: #fff;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .card {
+        padding: 10px 20px 20px;
+        border: none;
+        border-radius: 18px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #fff;
+        height: 100%;
+        position: relative;
+
+        .card_info {
+            position: relative;
+            min-height: 220px;
+
+            .title_img {
+                margin-bottom: 10px;
+            }
+
+            .description {
+                max-width: 70%;
+
+                @media screen and (max-width: 767px) {
+                    max-width: unset;
+                }
+            }
+
+            .btn_link {
+                margin-top: 55px;
+                width: 40%;
+                position: absolute;
+                bottom: 0;
+
+                a {
+                    background-color: transparent;
+                    border: 1px solid #fff;
+                    width: unset;
+                }
+
+                .link_btn {
+                    padding: 0 15px;
+                }
+            }
+
+        }
+
+        .lower_img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            @media screen and (max-width: 374px) {
+                width: 60%;
+            }
+        }
+
+    }
+
+    .megogo {
+        background-color: #1F1F38;
+    }
+
+    .qaz {
+        background: linear-gradient(45deg, rgba(232, 7, 128, 1) 0%, rgba(244, 143, 51, 1) 48%, rgba(254, 237, 0, 1) 100%);
+    }
+
+    .amedia {
+        background-color: #1F1F38;
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+    .online_cinema {
+        .title_hold {
+            max-width: unset;
+        }
+    }
+
+}

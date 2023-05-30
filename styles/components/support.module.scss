@@ -1,0 +1,75 @@
+@import '@/styles/global_variables.scss';
+
+.support_hold {
+    position: fixed;
+    right: 2vw;
+    bottom: 10vh;
+    z-index: 100;
+
+    @media (min-width: 1440px) {
+        right: calc(50% - 650px);
+    }
+
+    img {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .content_hold {
+        position: relative;
+
+        .content {
+            background-color: #fff;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 200px;
+            min-height: 50px;
+            border-radius: 8px;
+            padding: 16px;
+            color: $primary_dark_blue;
+            box-shadow: 0px 4px 32px 0px rgba(0, 16, 61, 0.16);
+            display: none;
+
+            .close {
+                text-align: right;
+            }
+
+            h5 {
+                margin: 0;
+            }
+
+            .numbers {
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                gap: 25px;
+
+                .block {
+                    min-width: 130px;
+                    font-size: 16px;
+
+                    .title {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        color: $primary_blue;
+                        margin-bottom: 5px;
+                    }
+
+                    a {
+                        &:hover {
+                            color: $primary_blue;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .content.open {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,119 @@
+@import '@/styles/global_variables.scss';
+
+.payment {
+    .payment_hold {
+        border: 1.6px solid $stroke_grey;
+        border-radius: 18px;
+
+        .description {
+            padding: 25px 25px 0;
+
+            p {
+                color: $primary_text_gray;
+
+                @media screen and (max-width: 767px) {
+                    line-height: 16px;
+                }
+            }
+
+            .img_hold {
+                @media screen and (max-width: 767px) {
+                    display: none;
+                }
+            }
+        }
+
+        .form_hold {
+            padding: 25px 25px 0;
+
+            @media screen and (max-width: 767px) {
+                padding-top: 0;
+            }
+
+            fieldset {
+                border-radius: 8px;
+            }
+
+            .form_field {
+                margin-bottom: 16px;
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .profile_hold {
+        border: 1.6px solid $stroke_grey;
+        border-radius: 18px;
+        height: 100%;
+        position: relative;
+
+        .profile_img_hold {
+            position: absolute;
+            right: 0;
+            z-index: -1;
+            width: 50%;
+        }
+
+        .profile_block_info {
+            padding: 25px 25px 0;
+
+            h3 {
+                width: 50%;
+
+                @media screen and (max-width: 1023px) {
+                    line-height: 24px;
+                }
+            }
+
+            p {
+                color: $primary_text_gray;
+
+                @media screen and (max-width: 767px) {
+                    line-height: 16px;
+                }
+            }
+
+            .linkHolder {
+                margin: 12px 0 16px;
+            }
+        }
+
+    }
+
+}
+
+.modalBody {
+
+    h4 {
+        text-align: center;
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        font-size: 16px;
+        padding: 10px 0;
+        border: 1.6px solid $stroke_grey;
+        border-radius: 8px;
+        background-color: transparent;
+        text-align: center;
+
+        &:hover {
+            cursor: pointer
+        }
+    }
+
+    .redBtn {
+        margin: 20px 0;
+        background-color: #F14635;
+        color: #fff;
+        border: none;
+    }
+
+}

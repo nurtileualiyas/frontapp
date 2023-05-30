@@ -1,0 +1,168 @@
+@import './global_variables.scss';
+
+@font-face {
+  font-family: euclid circular a;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Euclid Circular A'), url('../public/fonts/Euclid\ Circular\ A\ Regular.woff') format('woff')
+}
+
+@font-face {
+  font-family: euclid circular a;
+  font-style: italic;
+  font-weight: 400;
+  src: local('Euclid Circular A'), url('../public/fonts/Euclid Circular A Italic.woff') format('woff')
+}
+
+@font-face {
+  font-family: euclid circular a;
+  font-style: normal;
+  font-weight: 300;
+  src: local('Euclid Circular A'), url('../public/fonts/Euclid Circular A Light.woff') format('woff')
+}
+
+@font-face {
+  font-family: euclid circular a;
+  font-style: italic;
+  font-weight: 300;
+  src: local('Euclid Circular A'), url('../public/fonts/Euclid Circular A Light Italic.woff') format('woff')
+}
+
+@font-face {
+  font-family: euclid circular a;
+  font-style: normal;
+  font-weight: 500;
+  src: local('Euclid Circular A'), url('../public/fonts/Euclid Circular A Medium.woff') format('woff')
+}
+
+@font-face {
+  font-family: euclid circular a;
+  font-style: italic;
+  font-weight: 500;
+  src: local('Euclid Circular A'), url('../public/fonts/Euclid Circular A Medium Italic.woff') format('woff')
+}
+
+@font-face {
+  font-family: euclid circular a;
+  font-style: normal;
+  font-weight: 600;
+  src: local('Euclid Circular A'), url('../public/fonts/Euclid Circular A SemiBold.woff') format('woff')
+}
+
+@font-face {
+  font-family: euclid circular a;
+  font-style: italic;
+  font-weight: 600;
+  src: local('Euclid Circular A'), url('../public/fonts/Euclid Circular A SemiBold Italic.woff') format('woff')
+}
+
+@font-face {
+  font-family: euclid circular a;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Euclid Circular A'), url('../public/fonts/Euclid Circular A Bold.woff') format('woff')
+}
+
+@font-face {
+  font-family: euclid circular a;
+  font-style: italic;
+  font-weight: 700;
+  src: local('Euclid Circular A'), url('../public/fonts/Euclid Circular A Bold Italic.woff') format('woff')
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: euclid circular a;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+section {
+  padding: 25px 0;
+}
+
+.p-dialog .p-dialog-header {
+  padding: 1rem 1.5rem 0.2rem;
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
+}
+
+.hr {
+  margin: 0;
+  background: #FFFFFF;
+  border-bottom: 1px solid #E0E5F1;
+}
+
+.loading {
+  text-align: center;
+}
+
+.hideElem {
+  display: none;
+}
+
+.clickableELem {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.primary_btn {
+  background-color: $primary_blue;
+  padding: 10px;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.primary_btn_dark {
+  background-color: $primary_dark_blue;
+  padding: 10px;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.outlined_btn {
+  background-color: transparent;
+  padding: 10px;
+  color: $primary_blue;
+  border-radius: 8px;
+  border: 1px solid $primary_blue;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.primary_link {
+  background-color: $primary_blue;
+  padding: 8px 10px 10px;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

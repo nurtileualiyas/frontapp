@@ -1,0 +1,63 @@
+@import '@/styles/global_variables.scss';
+
+.modalBody {
+    .formHolder {
+        fieldset {
+            border-radius: 8px;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        .formField {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .sendBtn {
+            background-color: $primary_blue;
+            width: 100%;
+            padding: 13px 0;
+            color: #fff;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: .5px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .formHolder.closed {
+        display: none;
+    }
+
+    .formResult {
+        display: none;
+
+        .imageHold {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            color: #828282;
+        }
+    }
+
+    .formResult.opened {
+        display: block;
+    }
+
+}

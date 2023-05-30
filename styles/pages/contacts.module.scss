@@ -1,0 +1,105 @@
+@import '@/styles/global_variables.scss';
+
+.main_holder {
+
+    h2,
+    h5 {
+        color: $primary_dark_blue;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+
+        @media (max-width: 374px) {
+            font-size: 25px;
+        }
+    }
+
+    p {
+        color: $primary_text_gray;
+    }
+
+    .card {
+
+        padding: 20px;
+        border: 1.6px solid $stroke_grey;
+        border-radius: 18px;
+        height: 100%;
+
+    }
+
+    .telegram {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        p {
+            max-width: 70%;
+
+            @media (max-width: 767px) {
+                max-width: unset;
+            }
+        }
+
+        .bot_image {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 10px 20px;
+        }
+    }
+
+    .phone_numbers {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 4px 20%;
+
+        a {
+            color: $primary_dark_blue;
+            margin-bottom: 5px;
+            padding-bottom: 2px;
+            border-bottom: 1px solid $primary_dark_blue;
+            transition: .3s;
+
+            &:hover {
+                cursor: pointer;
+                color: $primary_blue;
+                border-bottom-color: $primary_blue;
+            }
+        }
+    }
+
+    .formField {
+        width: 100%;
+        margin: 20px 0;
+
+        fieldset {
+            border-radius: 8px;
+        }
+    }
+
+    .copyIcon {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .btn_text {
+        display: block;
+        margin: 0 10px;
+        font-weight: 500;
+    }
+
+}

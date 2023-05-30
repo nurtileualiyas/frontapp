@@ -1,0 +1,71 @@
+@import '@/styles/global_variables.scss';
+
+.hitsale {
+
+    h3 {
+        margin: 0;
+    }
+
+    .title_hold {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 220px;
+        margin-bottom: 25px;
+    }
+
+    .card {
+        padding: 0 20px 20px;
+        border: 1.6px solid $stroke_grey;
+        border-radius: 18px;
+
+        .info_hold {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            .info_details {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                .delails_number {
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+
+                .delails_unit {
+                    font-size: 14px;
+                }
+            }
+
+            .info_price {
+                font-weight: 600;
+                font-size: 20px;
+            }
+        }
+
+        .compare_toggler {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 10px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+    .hitsale {
+        .title_hold {
+            max-width: unset;
+        }
+    }
+
+}

@@ -1,0 +1,58 @@
+.carousel {
+    margin: 20px auto;
+    overflow-x: hidden;
+
+    .carouselItems {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100vw;
+
+        .carouselItem {
+            margin: 0 1vw;
+            width: 60vw;
+
+            .carouselItemImg {
+                width: inherit;
+            }
+        }
+    }
+
+    .slideBtnHolder {
+        margin: auto;
+        margin-left: 17.4vw;
+        width: 65.2vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 24%;
+
+        button {
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .slideBtnPrev {
+                margin-right: 3px;
+            }
+
+            .slideBtnNext {
+                margin-left: 3px;
+            }
+
+        }
+    }
+}
+
+.slideTransition {
+    transition: 0.8s ease-in-out;
+}

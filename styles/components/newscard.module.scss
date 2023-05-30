@@ -1,0 +1,32 @@
+@import '@/styles/global_variables.scss';
+
+.card {
+    padding: 20px;
+    border: 1.6px solid $stroke_grey;
+    border-radius: 18px;
+    min-width: 350px;
+    transition: .3s;
+    display: block;
+
+    @media (max-width: 1339px) {
+        min-width: 300px;
+    }
+
+    @media (max-width: 767px) {
+        min-width: 100%;
+    }
+
+    &:hover {
+        box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 18px 26px -12px rgb(229, 229, 234);
+    }
+
+    .category {
+        background-color: rgba(242, 243, 247, 1);
+        margin: 25px 0 0;
+        border-radius: 70px;
+        padding: 5px 15px 7px;
+        display: inline-block;
+        color: $primary_dark_blue;
+    }
+}

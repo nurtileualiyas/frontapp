@@ -1,0 +1,16 @@
+@import '@/styles/global_variables.scss';
+
+.singleNews {
+    a {
+        color: blue;
+        text-decoration: underline;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}

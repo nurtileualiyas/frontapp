@@ -1,0 +1,294 @@
+@import '@/styles/global_variables.scss';
+
+.page_name {
+    @media (max-width: 1023px) {
+        display: none;
+    }
+}
+
+.main_holder {
+
+    .tariff_holder {
+        margin-bottom: 20px;
+
+        .tariff_head {
+            width: 100%;
+        }
+
+        .tariff_body {
+            padding: 14px 20px;
+            border: 1px solid $stroke_grey;
+            border-bottom-left-radius: 18px;
+            border-bottom-right-radius: 18px;
+
+            .tariff_point {
+                margin-bottom: 12px;
+
+                .point_title {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    color: $primary_blue;
+
+                    font-size: 16px;
+                }
+
+                .point_text {
+                    color: $primary_dark_blue;
+                    font-size: 16px;
+                }
+            }
+
+            .price_holder {
+                margin: 10px 0;
+
+                .price_info {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .price {
+                        color: $primary_dark_blue;
+                        font-size: 22px;
+                        font-weight: 500;
+                    }
+                }
+
+                .price_description {
+                    color: $primary_text_gray;
+                    font-size: 14px;
+                }
+            }
+
+            .btn_holder {
+                display: flex;
+                gap: 20px;
+
+                margin: 18px 0;
+
+                button {
+                    width: 100%;
+                }
+            }
+
+            .compare_toggler {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-top: 14px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .menu_holder {
+        padding: 15px 0;
+        background-color: #F9FAFC;
+        border-radius: 18px;
+
+        @media (max-width: 1023px) {
+            display: none;
+        }
+
+        li {
+            list-style: none;
+            padding: 8px 20px;
+            font-weight: 500;
+            transition: .3s;
+            margin: 5px 0;
+
+            &:hover {
+                cursor: pointer;
+                color: $primary_blue;
+            }
+        }
+
+        li.active {
+            color: $primary_blue;
+        }
+    }
+
+    .mobile_menu {
+        display: none;
+
+        @media (max-width: 1023px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .current_menu_item_name {
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        .mobile_menu_items {
+            display: flex;
+            gap: 10px;
+        }
+
+
+
+    }
+
+}
+
+.modalBody {
+    .formHolder {
+        fieldset {
+            border-radius: 8px;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        .formField {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .sendBtn {
+            background-color: $primary_blue;
+            width: 100%;
+            padding: 13px 0;
+            color: #fff;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: .5px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .formHolder.closed {
+        display: none;
+    }
+
+    .formResult {
+        display: none;
+
+        .imageHold {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            color: #828282;
+        }
+    }
+
+    .formResult.opened {
+        display: block;
+    }
+
+}
+
+.more_dialog {
+    p {
+        color: $primary_text_gray;
+    }
+
+    .tariff_point {
+        margin-bottom: 12px;
+
+        .point_title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: $primary_blue;
+            font-weight: 500;
+
+            font-size: 16px;
+        }
+
+        .point_text {
+            color: $primary_dark_blue;
+            font-size: 16px;
+        }
+    }
+}
+
+.hr_holder {
+    margin: 8px 0;
+}
+
+.mobile_menu_list {
+    li {
+        list-style: none;
+        padding: 10px;
+        border-radius: 4px;
+        color: #000;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    li.active {
+        background-color: $primary_bg_gray;
+    }
+}
+
+.searchHold {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 8px 0;
+    border-radius: 6px;
+    background-color: #F9FAFC;
+    margin-bottom: 15px;
+
+    @media (max-width: 1023px) {
+        display: none;
+    }
+
+    .icon {
+        width: 3rem;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .input {
+        width: 100%;
+
+        input {
+            width: 100%;
+            height: 20px;
+            font-size: 14px;
+            background-color: #F9FAFC;
+            outline: none;
+            border: none;
+        }
+    }
+}
+
+.mobileSearchHold {
+    display: none;
+}
+
+.mobileSearchHold.active {
+
+    @media (max-width: 1023px) {
+        display: block;
+    }
+
+    .searchHold {
+        display: flex;
+    }
+}

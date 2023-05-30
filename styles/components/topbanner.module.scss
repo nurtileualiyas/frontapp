@@ -1,0 +1,81 @@
+@import '@/styles/global_variables.scss';
+
+.topbanner {
+    .banner_hold {
+        background-image: url('../../public/img/banner_top_desktop.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 50px 80px;
+        border-radius: 18px;
+        color: #fff;
+
+        @media screen and (max-width: 767px) {
+            padding: 40px 20px;
+        }
+
+        @media screen and (max-width: 500px) {
+            background-image: url('../../public/img/banner_top_mobile.png');
+        }
+
+        .info_hold {
+
+            .title_hold {
+                display: flex;
+                align-items: flex-end;
+                gap: 20px;
+
+                @media screen and (max-width: 767px) {
+                    display: block;
+                }
+
+                h3 {
+                    font-size: 30px;
+                    margin: 0;
+                    color: #fff;
+
+                    @media screen and (max-width: 767px) {
+                        font-weight: 400;
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            .description {
+                width: 33%;
+                margin: 20px 0;
+
+                @media screen and (max-width: 1439px) {
+                    width: 35%;
+                }
+
+                @media screen and (max-width: 1023px) {
+                    width: 60%;
+                }
+
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                }
+            }
+
+            .link_btn_hold {
+                max-width: 100px;
+
+                @media screen and (max-width: 767px) {
+                    max-width: unset;
+                }
+
+                .link_btn {
+                    padding: 0 10px;
+
+                    @media screen and (max-width: 767px) {
+                        width: 100%;
+                    }
+                }
+            }
+
+
+
+        }
+
+    }
+}
